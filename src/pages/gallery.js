@@ -4,7 +4,7 @@ import Title from '../components/Gram/Title'
 import ImageGrid from '../components/Gram/ImageGrid'
 import Modal from '../components/Gram/Modal'
 import UploadForm from '../components/Gram/UploadForm'
-import '../gallary.css'
+import './gallary.css'
 
 ReactDOM.render(
   <React.StrictMode>
