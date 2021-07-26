@@ -8,7 +8,7 @@ import EmptyState from "../components/EmptyState";
 
 
 function redirect() {
-    const url = 'https://drive.google.com/drive/folders/1OgIh7L3v7G_buqst5vMQ3ETvMJXhrha4?usp=sharing'
+    const url = 'https://drive.google.com/drive/folders/1El13ekUEu7YJw4fyXPMMgQfy9IB0FlnO'
   return  window.location.href = url;
 }
 

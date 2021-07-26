@@ -111,7 +111,6 @@ const rdivStyle = {
        height: '800px',
      };
 
-    if (user) {
       return (
         
       <body>
@@ -171,15 +170,6 @@ const rdivStyle = {
 
        </body>
       );
-    }
-
-    return (
-      <EmptyState
-        image={<InsertBlockIllustration />}
-        title="Ailex"
-        description="Your Autonomous Solution"
-      />
-    );
   }
 
   componentDidMount() {
