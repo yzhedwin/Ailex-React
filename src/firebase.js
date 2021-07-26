@@ -23,7 +23,7 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 export const storage = firebase.storage();
 export const performance = firebase.performance();
-
+export const timestamp = firebase.firestore.FieldValue.serverTimestamp
 export let analytics;
 
 if (process.env.NODE_ENV !== "test") {

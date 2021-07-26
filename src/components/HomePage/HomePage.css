@@ -1,0 +1,95 @@
+
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  height: 1000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1 {
+  /* The image used */
+  background-image: url("1.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: 10px;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("2.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: right;
+}
+.parallax3 {
+  /* The image used */
+  background-image: url("3.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 800px;
+   background-position-x: 10px;
+}
+.parallax4 {
+  /* The image used */
+  background-image: url("4.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 800px;
+}
+.parallax5 {
+  /* The image used */
+  background-image: url("6.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 800px;
+   background-position-x: 10px;
+}
+.parallax6 {
+  /* The image used */
+  background-image: url("5.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 800px;
+}

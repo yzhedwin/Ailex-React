@@ -8,6 +8,11 @@ import HomePage from "../HomePage";
 import AdminPage from "../AdminPage";
 import UserPage from "../UserPage";
 import NotFoundPage from "../NotFoundPage";
+import Downloads from "../../pages/downloads";
+import About from "../../pages/about";
+import Restricted from "../../pages/restricted";
+import Multiplayer from "../../pages/multiplayer";
+import Gallery from "../../pages/gallery";
 
 class Router extends Component {
   render() {
@@ -20,7 +25,6 @@ class Router extends Component {
     return (
       <BrowserRouter basename={process.env.REACT_APP_BASENAME}>
         {bar}
-
         <Switch>
           <Route path="/" exact>
             <HomePage user={user} openSnackbar={openSnackbar} />
@@ -37,7 +41,13 @@ class Router extends Component {
           <Route path="/user/:userId">
             {user ? <UserPage /> : <Redirect to="/" />}
           </Route>
-
+          <Route path='/about' component={About} />
+          <Route path='/restricted' component={Restricted} />
+          <Route path='/multiplayer' component={Multiplayer} />
+          <Route path='/ailexgram' component = {Gallery} />
+          <Route path='/downloads'>
+            {user ? <Downloads/> : < Redirect to='/restricted' /> }
+            </Route>
           <Route>
             <NotFoundPage />
           </Route>

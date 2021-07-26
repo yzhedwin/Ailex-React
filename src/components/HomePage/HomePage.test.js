@@ -11,7 +11,7 @@ it("renders without crashing", () => {
 
   ReactDOM.render(
     <MemoryRouter>
-      <HomePage title="" />
+      <HomePage title="Welcome to Ailex" />
     </MemoryRouter>,
     div
   );

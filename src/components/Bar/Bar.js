@@ -20,6 +20,15 @@ import {
 
 import UserAvatar from "../UserAvatar";
 
+function redirect() {
+    const url = 'https://ailex.boards.net/'
+  return  window.location.href = url;
+}
+function multiplayer() {
+  const url = 'https://ailex.boards.net/board/5/multiplayer'
+return  window.location.href = url;
+}
+
 class Bar extends Component {
   constructor(props) {
     super(props);
@@ -88,7 +97,7 @@ class Bar extends Component {
       <AppBar color="primary" position="static">
         <Toolbar>
           <Box display="flex" flexGrow={1}>
-            <Typography color="inherit" variant="h6">
+            <Typography color="inherit" variant="h5">
               <Link
                 color="inherit"
                 component={RouterLink}
@@ -100,6 +109,69 @@ class Bar extends Component {
             </Typography>
           </Box>
 
+          <Box display="flex" flexGrow={1}>
+            <Typography color="inherit" variant="h6">
+              <Link
+                color="inherit"
+                component={RouterLink}
+                to="/downloads"
+                underline="none"
+              >
+                Download Now
+              </Link>
+            </Typography>
+          </Box>
+
+          <Box display="flex" flexGrow={1}>
+            <Typography color="inherit" variant="h6">
+              <Link
+                color="inherit"
+                component={RouterLink}
+                to="/about"
+                underline="none"
+              >
+                About us
+              </Link>
+            </Typography>
+          </Box>
+          <Box display="flex" flexGrow={1}>
+            <Typography color="inherit" variant="h6">
+              <Link
+                color="inherit"
+                component={RouterLink}
+                onClick={multiplayer}
+                underline="none"
+              >
+                Multiplayer
+              </Link>
+            </Typography>
+          </Box>
+          <Box display="flex" flexGrow={1}>
+            <Typography color="inherit" variant="h6">
+              <Link
+                color="inherit"
+                component={RouterLink}
+                onClick={redirect}
+                underline="none"
+              >
+               Forum
+              </Link>
+            </Typography>
+          </Box>
+          <Box display="flex" flexGrow={1}>
+            <Typography color="inherit" variant="h6">
+              <Link
+                color="inherit"
+                component={RouterLink}
+                to="/ailexgram"
+                underline="none"
+              >
+               AilexGram
+              </Link>
+            </Typography>
+          </Box>
+          
+          
           {user && (
             <>
               {roles.includes("admin") && (
